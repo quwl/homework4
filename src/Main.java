@@ -13,18 +13,16 @@ public class Main {
         int temperature = -10;
         if (temperature > 5) {
             System.out.println("На улице тепло, можно идти без шапки");
-        }
-        if (temperature < 5) {
+        } else if (temperature < 5) {
 
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         }
 
         System.out.println("Задание 3");
-        int speed = 60;
-        if (speed <= 60) {
+        int speed = 50;
+        if (speed < 60) {
             System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
-        }
-        if (speed > 60) {
+        } else if (speed > 60) {
             System.out.println("Скорость превышена");
         }
 
@@ -56,9 +54,11 @@ public class Main {
         }
 
         System.out.println("Задание 6");
-        int people = 101;
-        if (people < 102 && people > 0) {
-            System.out.println("В вагоне есть стоячие или сидячие места");
+        int people = 60;
+        if (people < 102 && people >= 60) {
+            System.out.println("В вагоне есть стоячие места");
+        } else if (people < 60 && people >= 0) {
+            System.out.println("В вагоне есть сидячие места");
         } else {
             System.out.println("Вагон переполнен");
         }
